@@ -4,5 +4,5 @@ A NLU system for [NLP4U2019](http://bcmi.sjtu.edu.cn/home/zhaohai/nlp4u2019/) co
 
 For more about this project, open this directory in jupyter notebook and see ```lrGLUE.ipynb```.
 
-For more about what I've done, see ```report.pdf```. [HERE](./blob/master/report.pdf)
+For more about what I've done, see ```report.pdf```. [HERE](https://github.com/camelop/lrGLUE/blob/master/report.pdf)
 
