@@ -1,2 +1,4 @@
 .ipynb_*
-data/bert
+data/bert*
+data/my_submission
+output

@@ -1,0 +1,186 @@
+06/15/2019 18:16:12 - INFO - __main__ -   device: cuda n_gpu: 1, distributed training: False, 16-bits training: False
+06/15/2019 18:16:12 - INFO - pytorch_pretrained_bert.tokenization -   loading vocabulary file data/bert_cache/bert-large-uncased-vocab.txt
+06/15/2019 18:16:12 - INFO - pytorch_pretrained_bert.modeling -   loading archive file data/bert_cache/bert-large-uncased
+06/15/2019 18:16:12 - INFO - pytorch_pretrained_bert.modeling -   Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 1024,
+  "initializer_range": 0.02,
+  "intermediate_size": 4096,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 16,
+  "num_hidden_layers": 24,
+  "type_vocab_size": 2,
+  "vocab_size": 30522
+}
+
+06/15/2019 18:16:24 - INFO - pytorch_pretrained_bert.modeling -   Weights of BertForSequenceClassification not initialized from pretrained model: ['classifier.weight', 'classifier.bias']
+06/15/2019 18:16:24 - INFO - pytorch_pretrained_bert.modeling -   Weights from pretrained model not used in BertForSequenceClassification: ['cls.predictions.bias', 'cls.predictions.transform.dense.weight', 'cls.predictions.transform.dense.bias', 'cls.predictions.decoder.weight', 'cls.seq_relationship.weight', 'cls.seq_relationship.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.transform.LayerNorm.bias']
+06/15/2019 18:16:26 - INFO - __main__ -   Writing example 0 of 8551
+06/15/2019 18:16:26 - INFO - __main__ -   *** Example ***
+06/15/2019 18:16:26 - INFO - __main__ -   guid: train-0
+06/15/2019 18:16:26 - INFO - __main__ -   tokens: [CLS] our friends won ' t buy this analysis , let alone the next one we propose . [SEP]
+06/15/2019 18:16:26 - INFO - __main__ -   input_ids: 101 2256 2814 2180 1005 1056 4965 2023 4106 1010 2292 2894 1996 2279 2028 2057 16599 1012 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+06/15/2019 18:16:26 - INFO - __main__ -   input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+06/15/2019 18:16:26 - INFO - __main__ -   segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+06/15/2019 18:16:26 - INFO - __main__ -   label: 1 (id = 1)
+06/15/2019 18:16:26 - INFO - __main__ -   *** Example ***
+06/15/2019 18:16:26 - INFO - __main__ -   guid: train-1
+06/15/2019 18:16:26 - INFO - __main__ -   tokens: [CLS] one more pseudo general ##ization and i ' m giving up . [SEP]
+06/15/2019 18:16:26 - INFO - __main__ -   input_ids: 101 2028 2062 18404 2236 3989 1998 1045 1005 1049 3228 2039 1012 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+06/15/2019 18:16:26 - INFO - __main__ -   input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+06/15/2019 18:16:26 - INFO - __main__ -   segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+06/15/2019 18:16:26 - INFO - __main__ -   label: 1 (id = 1)
+06/15/2019 18:16:26 - INFO - __main__ -   *** Example ***
+06/15/2019 18:16:26 - INFO - __main__ -   guid: train-2
+06/15/2019 18:16:26 - INFO - __main__ -   tokens: [CLS] one more pseudo general ##ization or i ' m giving up . [SEP]
+06/15/2019 18:16:26 - INFO - __main__ -   input_ids: 101 2028 2062 18404 2236 3989 2030 1045 1005 1049 3228 2039 1012 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+06/15/2019 18:16:26 - INFO - __main__ -   input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+06/15/2019 18:16:26 - INFO - __main__ -   segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+06/15/2019 18:16:26 - INFO - __main__ -   label: 1 (id = 1)
+06/15/2019 18:16:26 - INFO - __main__ -   *** Example ***
+06/15/2019 18:16:26 - INFO - __main__ -   guid: train-3
+06/15/2019 18:16:26 - INFO - __main__ -   tokens: [CLS] the more we study verbs , the cr ##azi ##er they get . [SEP]
+06/15/2019 18:16:26 - INFO - __main__ -   input_ids: 101 1996 2062 2057 2817 16025 1010 1996 13675 16103 2121 2027 2131 1012 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+06/15/2019 18:16:26 - INFO - __main__ -   input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+06/15/2019 18:16:26 - INFO - __main__ -   segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+06/15/2019 18:16:26 - INFO - __main__ -   label: 1 (id = 1)
+06/15/2019 18:16:26 - INFO - __main__ -   *** Example ***
+06/15/2019 18:16:26 - INFO - __main__ -   guid: train-4
+06/15/2019 18:16:26 - INFO - __main__ -   tokens: [CLS] day by day the facts are getting mu ##rk ##ier . [SEP]
+06/15/2019 18:16:26 - INFO - __main__ -   input_ids: 101 2154 2011 2154 1996 8866 2024 2893 14163 8024 3771 1012 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+06/15/2019 18:16:26 - INFO - __main__ -   input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+06/15/2019 18:16:26 - INFO - __main__ -   segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+06/15/2019 18:16:26 - INFO - __main__ -   label: 1 (id = 1)
+06/15/2019 18:16:28 - INFO - __main__ -   ***** Running training *****
+06/15/2019 18:16:28 - INFO - __main__ -     Num examples = 8551
+06/15/2019 18:16:28 - INFO - __main__ -     Batch size = 4
+06/15/2019 18:16:28 - INFO - __main__ -     Num steps = 6414
+Epoch:   0%|          | 0/3 [00:00<?, ?it/s]
+Iteration:   0%|          | 0/2138 [00:00<?, ?it/s][A
+Iteration:   0%|          | 1/2138 [00:00<30:37,  1.16it/s][A
+Iteration:   0%|          | 2/2138 [00:01<27:14,  1.31it/s][A
+Iteration:   0%|          | 3/2138 [00:01<24:38,  1.44it/s][A
+Iteration:   0%|          | 4/2138 [00:02<22:40,  1.57it/s][A
+Iteration:   0%|          | 5/2138 [00:02<21:17,  1.67it/s][A
+Iteration:   0%|          | 6/2138 [00:03<20:21,  1.75it/s][A
+Iteration:   0%|          | 7/2138 [00:03<19:41,  1.80it/s][A
+Iteration:   0%|          | 8/2138 [00:04<19:14,  1.84it/s][A
+Iteration:   0%|          | 9/2138 [00:05<19:40,  1.80it/s][A
+Iteration:   0%|          | 10/2138 [00:05<19:19,  1.83it/s][A
+Iteration:   1%|          | 11/2138 [00:06<19:04,  1.86it/s][A
+Iteration:   1%|          | 12/2138 [00:06<18:54,  1.87it/s][A
+Iteration:   1%|          | 13/2138 [00:07<19:21,  1.83it/s][A
+Iteration:   1%|          | 14/2138 [00:07<19:11,  1.84it/s][A
+Iteration:   1%|          | 15/2138 [00:08<19:04,  1.86it/s][A
+Iteration:   1%|          | 16/2138 [00:08<18:57,  1.87it/s][A
+Iteration:   1%|          | 17/2138 [00:09<18:52,  1.87it/s][A
+Iteration:   1%|          | 18/2138 [00:09<18:53,  1.87it/s][A
+Iteration:   1%|          | 19/2138 [00:10<18:50,  1.87it/s][A
+Iteration:   1%|          | 20/2138 [00:10<18:46,  1.88it/s][A
+Iteration:   1%|          | 21/2138 [00:11<18:44,  1.88it/s][A
+Iteration:   1%|          | 22/2138 [00:11<18:43,  1.88it/s][A
+Iteration:   1%|          | 23/2138 [00:12<18:42,  1.88it/s][A
+Iteration:   1%|          | 24/2138 [00:13<18:36,  1.89it/s][A
+Iteration:   1%|          | 25/2138 [00:13<18:39,  1.89it/s][A
+Iteration:   1%|          | 26/2138 [00:14<18:44,  1.88it/s][A
+Iteration:   1%|▏         | 27/2138 [00:14<18:27,  1.91it/s][A
+Iteration:   1%|▏         | 28/2138 [00:15<18:18,  1.92it/s][A
+Iteration:   1%|▏         | 29/2138 [00:15<18:09,  1.94it/s][A
+Iteration:   1%|▏         | 30/2138 [00:16<18:06,  1.94it/s][A
+Iteration:   1%|▏         | 31/2138 [00:16<18:02,  1.95it/s][A
+Iteration:   1%|▏         | 32/2138 [00:17<18:00,  1.95it/s][A
+Iteration:   2%|▏         | 33/2138 [00:17<18:03,  1.94it/s][A
+Iteration:   2%|▏         | 34/2138 [00:18<17:58,  1.95it/s][A
+Iteration:   2%|▏         | 35/2138 [00:18<17:54,  1.96it/s][A
+Iteration:   2%|▏         | 36/2138 [00:19<17:54,  1.96it/s][A
+Iteration:   2%|▏         | 37/2138 [00:19<17:53,  1.96it/s][A
+Iteration:   2%|▏         | 38/2138 [00:20<17:54,  1.95it/s][A
+Iteration:   2%|▏         | 39/2138 [00:20<17:53,  1.96it/s][A
+Iteration:   2%|▏         | 40/2138 [00:21<17:56,  1.95it/s][A
+Iteration:   2%|▏         | 41/2138 [00:21<17:55,  1.95it/s][A
+Iteration:   2%|▏         | 42/2138 [00:22<17:53,  1.95it/s][A
+Iteration:   2%|▏         | 43/2138 [00:22<17:54,  1.95it/s][A
+Iteration:   2%|▏         | 44/2138 [00:23<17:54,  1.95it/s][A
+Iteration:   2%|▏         | 45/2138 [00:23<17:52,  1.95it/s][A
+Iteration:   2%|▏         | 46/2138 [00:24<17:52,  1.95it/s][A
+Iteration:   2%|▏         | 47/2138 [00:24<18:07,  1.92it/s][A
+Iteration:   2%|▏         | 48/2138 [00:25<18:12,  1.91it/s][A
+Iteration:   2%|▏         | 49/2138 [00:25<18:16,  1.91it/s][A
+Iteration:   2%|▏         | 50/2138 [00:26<18:22,  1.89it/s][A
+Iteration:   2%|▏         | 51/2138 [00:27<18:27,  1.88it/s][A
+Iteration:   2%|▏         | 52/2138 [00:27<18:25,  1.89it/s][A
+Iteration:   2%|▏         | 53/2138 [00:28<18:23,  1.89it/s][A
+Iteration:   3%|▎         | 54/2138 [00:28<18:20,  1.89it/s][A
+Iteration:   3%|▎         | 55/2138 [00:29<18:23,  1.89it/s][A
+Iteration:   3%|▎         | 56/2138 [00:29<18:25,  1.88it/s][A
+Iteration:   3%|▎         | 57/2138 [00:30<19:07,  1.81it/s][A
+Iteration:   3%|▎         | 58/2138 [00:30<19:08,  1.81it/s][A
+Iteration:   3%|▎         | 59/2138 [00:31<19:13,  1.80it/s][A
+Iteration:   3%|▎         | 60/2138 [00:31<19:18,  1.79it/s][A
+Iteration:   3%|▎         | 61/2138 [00:32<19:00,  1.82it/s][A
+Iteration:   3%|▎         | 62/2138 [00:32<18:48,  1.84it/s][A
+Iteration:   3%|▎         | 63/2138 [00:33<18:41,  1.85it/s][A
+Iteration:   3%|▎         | 64/2138 [00:34<18:35,  1.86it/s][A
+Iteration:   3%|▎         | 65/2138 [00:34<18:27,  1.87it/s][A
+Iteration:   3%|▎         | 66/2138 [00:35<18:22,  1.88it/s][A
+Iteration:   3%|▎         | 67/2138 [00:35<18:18,  1.88it/s][A
+Iteration:   3%|▎         | 68/2138 [00:36<18:17,  1.89it/s][A
+Iteration:   3%|▎         | 69/2138 [00:36<18:17,  1.89it/s][A
+Iteration:   3%|▎         | 70/2138 [00:37<18:15,  1.89it/s][A
+Iteration:   3%|▎         | 71/2138 [00:37<18:12,  1.89it/s][A
+Iteration:   3%|▎         | 72/2138 [00:38<18:09,  1.90it/s][A
+Iteration:   3%|▎         | 73/2138 [00:38<18:10,  1.89it/s][A
+Iteration:   3%|▎         | 74/2138 [00:39<18:08,  1.90it/s][A
+Iteration:   4%|▎         | 75/2138 [00:39<18:09,  1.89it/s][A
+Iteration:   4%|▎         | 76/2138 [00:40<18:08,  1.89it/s][A
+Iteration:   4%|▎         | 77/2138 [00:40<18:33,  1.85it/s][A
+Iteration:   4%|▎         | 78/2138 [00:41<18:25,  1.86it/s][A
+Iteration:   4%|▎         | 79/2138 [00:42<18:21,  1.87it/s][A
+Iteration:   4%|▎         | 80/2138 [00:42<18:18,  1.87it/s][A
+Iteration:   4%|▍         | 81/2138 [00:43<18:16,  1.88it/s][A
+Iteration:   4%|▍         | 82/2138 [00:43<18:14,  1.88it/s][A
+Iteration:   4%|▍         | 83/2138 [00:44<18:13,  1.88it/s][A
+Iteration:   4%|▍         | 84/2138 [00:44<18:10,  1.88it/s][A
+Iteration:   4%|▍         | 85/2138 [00:45<18:44,  1.83it/s][A
+Iteration:   4%|▍         | 86/2138 [00:45<18:33,  1.84it/s][A
+Iteration:   4%|▍         | 87/2138 [00:46<18:21,  1.86it/s][A
+Iteration:   4%|▍         | 88/2138 [00:46<18:17,  1.87it/s][A
+Iteration:   4%|▍         | 89/2138 [00:47<18:37,  1.83it/s][A
+Iteration:   4%|▍         | 90/2138 [00:47<18:29,  1.85it/s][A
+Iteration:   4%|▍         | 91/2138 [00:48<18:20,  1.86it/s][A
+Iteration:   4%|▍         | 92/2138 [00:49<18:14,  1.87it/s][A
+Iteration:   4%|▍         | 93/2138 [00:49<18:09,  1.88it/s][A
+Iteration:   4%|▍         | 94/2138 [00:50<18:20,  1.86it/s][A
+Iteration:   4%|▍         | 95/2138 [00:50<18:11,  1.87it/s][A
+Iteration:   4%|▍         | 96/2138 [00:51<18:04,  1.88it/s][A
+Iteration:   5%|▍         | 97/2138 [00:51<18:30,  1.84it/s][A
+Iteration:   5%|▍         | 98/2138 [00:52<18:21,  1.85it/s][A
+Iteration:   5%|▍         | 99/2138 [00:52<18:14,  1.86it/s][A
+Iteration:   5%|▍         | 100/2138 [00:53<18:06,  1.88it/s][A
+Iteration:   5%|▍         | 101/2138 [00:53<18:00,  1.89it/s][A
+Iteration:   5%|▍         | 102/2138 [00:54<17:57,  1.89it/s][A
+Iteration:   5%|▍         | 103/2138 [00:54<17:54,  1.89it/s][A
+Iteration:   5%|▍         | 104/2138 [00:55<17:58,  1.89it/s][A
+Iteration:   5%|▍         | 105/2138 [00:56<18:50,  1.80it/s][A
+Iteration:   5%|▍         | 106/2138 [00:56<18:32,  1.83it/s][A
+Iteration:   5%|▌         | 107/2138 [00:57<18:18,  1.85it/s][A
+Iteration:   5%|▌         | 108/2138 [00:57<18:10,  1.86it/s][A
+Iteration:   5%|▌         | 109/2138 [00:58<18:03,  1.87it/s][A
+Iteration:   5%|▌         | 110/2138 [00:58<17:58,  1.88it/s][A
+Iteration:   5%|▌         | 111/2138 [00:59<17:55,  1.88it/s][A
+Iteration:   5%|▌         | 112/2138 [00:59<17:54,  1.89it/s][A
+Iteration:   5%|▌         | 113/2138 [01:00<17:54,  1.88it/s][A
+Iteration:   5%|▌         | 114/2138 [01:00<18:05,  1.86it/s][A
+Iteration:   5%|▌         | 115/2138 [01:01<18:16,  1.85it/s][A
+Iteration:   5%|▌         | 116/2138 [01:01<18:23,  1.83it/s][A
+Iteration:   5%|▌         | 117/2138 [01:02<18:30,  1.82it/s][A
+Iteration:   6%|▌         | 118/2138 [01:03<18:35,  1.81it/s][ATraceback (most recent call last):
+  File "run_classifier.py", line 1030, in <module>
+    main()
+  File "run_classifier.py", line 856, in main
+    tr_loss += loss.item()
+KeyboardInterrupt
+
+
